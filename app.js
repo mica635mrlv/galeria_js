@@ -2,53 +2,52 @@
 
 const imagens = [
     {
-        nome: 'Calendar',
+        nome: 'Caledário 2025',
         url: './img/1.jpg'
     },
     {
-        nome: 'Street',
+        nome: 'Snoopy em Londres',
         url: './img/2.jpg'
     },
     {
-        nome: 'March',
+        nome: 'Calendário Março',
         url: './img/3.jpg'
     },
     {
-        nome: 'April',
+        nome: 'Calendário April',
         url: './img/4.jpg'
     },
     {
-        nome: 'May',
+        nome: 'Frase para o mês de Maio',
         url: './img/5.jpg'
     },
     {
-        nome: 'van Gogh',
+        nome: 'Snoopy em "A Noite Estrelada',
         url: './img/6.jpg'
     },
     {
-        nome: 'Heart',
+        nome: 'Snoopy no Dia dos Namorados',
         url: './img/7.jpg'
     },
     {
-        nome: 'Study',
+        nome: 'Snoopy em Dia de Estudante',
         url: './img/8.jpg'
     }
-
-    // "./img/1.jpg",
-    // "./img/2.jpg",
-    // "./img/3.jpg",
-    // "./img/4.jpg",
-    // "./img/5.jpg",
-    // "./img/6.jpg",
-    // "./img/7.jpg",
-    // "./img/8.jpg"
 ]
 
 function criarImagem(srcImagem) {
     const galeria = document.getElementById('galeria')
     const imagem = document.createElement('img')
+    const legenda = document.createElement('div')
+    const texto = document.createElement('label')
+
     imagem.src = srcImagem.url
+    texto.textContent = srcImagem.nome
+
     galeria.appendChild(imagem)
+    galeria.appendChild(legenda)
+    legenda.appendChild(texto)
+
 }
 
 

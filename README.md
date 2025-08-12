@@ -1,1 +1,2 @@
-# galeria_js
+# Galeria Javascript
+

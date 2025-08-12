@@ -10,10 +10,26 @@ body{
 .galeria {
     display: columns;
     columns: 3;
-    color: white;
 }
 
 .galeria img{
     width: 100%;
     padding-block: 8px;
+}
+
+.galeria div {
+    position: relative;
+    align-items: center;
+    justify-content: right;
+    display: flex;
+}
+
+.galeria span {
+    color: aliceblue;
+    position: absolute;
+    bottom: 10px;
+    width: 40%;
+    height: 20px;
+    text-align: center;
+    background-color: black;
 }
